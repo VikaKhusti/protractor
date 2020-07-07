@@ -1,0 +1,31 @@
+{
+  "name": "protractor-cucumber-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "config/conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VikaKhusti/protractor.git"
+  },
+  "author": "Victoria Khusti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VikaKhusti/protractor/issues"
+  },
+  "homepage": "https://github.com/VikaKhusti/protractor#readme",
+  "devDependencies": {
+    "cucumber": "^1.3.2",
+    "protractor": "^7.0.0",
+    "protractor-cucumber-framework": "^6.2.1"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
