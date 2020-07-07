@@ -1,14 +1,20 @@
-// Tests for the calculator.
 exports.config = {
-  directConnect: true,
-
-  framework: 'jasmine2',
-
+  // set to "custom" instead of cucumber.
+  framework: 'custom',
+ 
+  // path relative to the current config file
+  frameworkPath: require.resolve('protractor-cucumber-framework'),
+ 
+  // require feature files
   specs: [
-    '../test/calculator.js'
+    '../features/calc.feature' // accepts a glob
   ],
-
-  capabilities: {
-    'browserName': 'chrome'
-  },
+ 
+  cucumberOpts: {
+    // require step definitions
+    require: [
+      '../features/calc_step.steps.js',
+      '../env.js'// accepts a glob
+    ]
+  }
 };
