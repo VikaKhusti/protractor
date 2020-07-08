@@ -4,5 +4,5 @@ Scenario: calc demo
 
 
 Given Open protractor website
-#When Click on View on GitHub button
-#Then Verify that User is redirected to the GitHub page
+When User add two numbers
+Then Result must be equal 5
